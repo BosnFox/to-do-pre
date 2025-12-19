@@ -32,7 +32,7 @@ function loadTasks() {
   if (savedTasks) {
     return JSON.parse(savedTasks);
   }
-  return initialItems;
+  return items;
 }
 
 function createItem(text) {

@@ -1,4 +1,4 @@
-const items = [
+const defaultItems = [
 	"Сделать проектную работу",
 	"Полить цветы",
 	"Пройти туториал по Реакту",
@@ -32,7 +32,7 @@ function loadTasks() {
   if (savedTasks) {
     return JSON.parse(savedTasks);
   }
-  return items;
+  return defaultItems;
 }
 
 function createItem(text) {
